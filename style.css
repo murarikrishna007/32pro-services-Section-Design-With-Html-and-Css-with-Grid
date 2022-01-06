@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.service-section{
+    padding: 50px 60px;
+
+}
+.service-section h1{
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.service-section h1::after{
+    content: "";
+    width: 250px;
+    height: 5px;
+    background-color: rgb(146, 30, 30);
+    display: flex;
+    margin: auto;
+    margin-top:5px;
+
+}
+.cards-section{
+    text-align: center;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+
+}
+.cards-section>div{
+    padding: 30px 10px;
+    background-color: #5e5e5e;
+    cursor: pointer;
+
+}
+.cards-section>div:hover{
+    background-color: #8c8c8c;
+    transition: 0.5s ease;
+
+}
+.cards-section i{
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border: 2px solid brown;
+    border-radius: 50%;
+    background-color: #d8db1d;
+    margin-bottom: 25px;
+
+}
+.cards-section i:hover{
+    background-color: #5e5e5e;
+    transition: 0.5s ease;
+
+}
+.cards-section h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+
+}
+.cards-section p{
+    color: #d4d4dd;
+    line-height: 1.5;
+    margin-bottom: 15px;
+
+}
+.cards-section a{
+    margin-top: 10px;
+      display: inline-block;
+      color: #fff;
+      background-color: #d8db1d;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      letter-spacing: 1px;
+    border-radius: 8px;
+     
+}
+.cards-section a:hover{
+    color: #22221a;
+    background-color: #fff;
+    font-weight: bold;
+}
+ 
+/* ---------- media queri   ------------------- */
+@media screen and (max-width:768px){
+    .cards-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
